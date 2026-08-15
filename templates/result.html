@@ -2,7 +2,7 @@
 	<html>
 	 <head>
 	 <meta charset = "utf-8">
-	 <link rel = "stylesheet" href = "Styles.css">
+	 <link rel = "stylesheet" href = "{{ url_for('static', filename='css/rstyle.css') }}">
 	 <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 	 
 	 <title>Thankyou!</title>
@@ -11,8 +11,31 @@
 	<main>
 	
 	
-	<p>data sent!</p>
+		<div id = "container">
+
+
+
+		<center><header><h1>Submission sent!</h1></header></center>
+
+
+
+			<div id = "prompted"><h3>Do you want to fill another form?</h3>
+</div>	
+
+
 	
+        <div id = "buttons">
+		
+      
+		
+		<button id = "btnx" type = "button">Yes</button>
+	
+
+	
+		<button id = "btny" type = "button">No</button>
+	
+	</div>
+</div>
 	
 	</main>
 	
