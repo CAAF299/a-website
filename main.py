@@ -30,6 +30,6 @@ def sub():
     return render_template("result.html")
 
 
-#TODO: finish this once and for all.
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
