@@ -21,6 +21,7 @@ html, body{
 
 }
 
+/*
 #prompted{
 
 	
@@ -29,7 +30,7 @@ html, body{
 	text-shadow:2.5px 1px black ;
 	font-size:25px;
 
-}
+}*/
 
 center{
 
@@ -46,12 +47,12 @@ center{
 #btnx{
 	background:linear-gradient(#90B3DC,#217AE4);
 }
-
+/*
 #btny{
 	background:linear-gradient(#F49191,#D51A1A);
 
 }
-
+*/
 button{
 	padding:25px;
 	font-size:28px;
@@ -71,10 +72,10 @@ button:hover{
 
 #btnx:hover{
 		box-shadow:3px 3px #144C8E;
-}
+}/*
 #btny:hover{
 	box-shadow:3px 3px #7E1111;
-}
+}*/
 
 #buttons{
 

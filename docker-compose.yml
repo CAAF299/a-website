@@ -1,0 +1,24 @@
+
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - .:/app               # Live-reload code without rebuilding image
+    depends_on:
+      - mongo-db             # Starts MongoDB before Flask starts
+
+  mongo-db:
+    image: mongo:latest
+ 
+    ports:
+      - "27017:27017"        # Exposes Mongo so you can still use tools like Compass
+    volumes:
+      - mongo_data:/data/db  # Saves database data permanently on your host machine
+
+volumes:
+  mongo_data:                # Named volume to persist database records

@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://mongo-db:27017/")
 db = client["user_database"]
 users_c = db["responses"]
 
@@ -32,4 +32,4 @@ def sub():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=5000)
